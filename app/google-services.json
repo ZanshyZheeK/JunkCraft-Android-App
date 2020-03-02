@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1045108254002",
+    "firebase_url": "https://junkcraft-ct.firebaseio.com",
+    "project_id": "junkcraft-ct",
+    "storage_bucket": "junkcraft-ct.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045108254002:android:fcc6e02666ea7706e3a32b",
+        "android_client_info": {
+          "package_name": "com.coverteam.junkcraft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045108254002-7fm9durk7t312ned04kj9htddeambf1t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.coverteam.junkcraft",
+            "certificate_hash": "352c3ead14bd69d65b8e0304ba074fd3eadf8072"
+          }
+        },
+        {
+          "client_id": "1045108254002-lbq0uvc4ajm7tjsg8mj2eupj7dkcelbj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvSoeNBhFnwToDRTikJ0edetn-pflUoc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045108254002-lbq0uvc4ajm7tjsg8mj2eupj7dkcelbj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

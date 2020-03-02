@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.coverteam.junkcraft">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Edit_Jual"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".iklan_pesanan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".iklanberhasil"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".about" />
+        <activity
+            android:name=".Checkout_pembelian"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".pembelian_berhasil"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".tdetail"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Daftar_Jual"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CheckOut_Saldo0"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Saldo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MarketCheckout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mainmarket"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mpaper"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tpaper"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Menu_utana"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Regis_berhasil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Register_dua"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Register_satu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GetStarted"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

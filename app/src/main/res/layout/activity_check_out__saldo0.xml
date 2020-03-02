@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgPrimary"
+    tools:context=".CheckOut_Saldo0">
+
+
+    <ImageView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bg_gradien_primary_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        tools:ignore="MissingConstraints">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints" >
+            <LinearLayout
+                android:id="@+id/textya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="20dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_back"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/mlight"
+                    android:layout_height="wrap_content"
+                    android:text="TRANSAKSI"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/mmedium"
+                    android:layout_height="wrap_content"
+                    android:text="SALDO"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_layout_white"
+                android:orientation="vertical"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textya"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/mmedium"
+                    android:lineSpacingExtra="9dp"
+                    android:text="Detail Order"
+                    android:textAlignment="center"
+                    android:textColor="@color/blackSecondary"
+                    android:textSize="16sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/mlight"
+                    android:lineSpacingExtra="9dp"
+                    android:text="Top-up saldo sedang proses"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#ededed" />
+
+                <TextView
+                    android:id="@+id/statusutama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/mmedium"
+                    android:lineSpacingExtra="12dp"
+                    android:textStyle="bold"
+                    android:text="Permintaan diterima"
+                    android:textAlignment="center"
+                    android:textColor="#d1206b"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/statusdetail"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/mlight"
+                    android:text="Silahkan Transfer Sejumlah Uang sesuai dengan\nSaldo Top-up yang Anda Inputkan"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_layout_white"
+                android:orientation="vertical"
+                android:paddingTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/mmedium"
+                    android:lineSpacingExtra="9dp"
+                    android:text="Detail Pembayaran"
+                    android:textAlignment="center"
+                    android:textColor="@color/blackSecondary"
+                    android:textSize="16sp"
+                    tools:ignore="MissingConstraints" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="24dp"
+                    android:background="#ededed" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/mlight"
+                    android:text="Metode Pembayaran"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints"
+                    />
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/mmedium"
+                    android:text="Transfer BANK Verifikasi Manual\nBNI 0495501434 a.n. Zanshy Pebryansyah"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/mlight"
+                    android:text="Tanggal Transaksi Update"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tanggaltopup"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/mmedium"
+                    android:text="02 Desember 2019, 08:58:57"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/mlight"
+                    android:text="Jumlah Top-up"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/jumlahtopup"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/mmedium"
+                    android:text="300000"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/mlight"
+                    android:text="Foto Bukti Transfer"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" />
+                <com.github.florent37.shapeofview.shapes.RoundRectView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:elevation="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    app:shape_roundRect_bottomLeftRadius="10dp"
+                    app:shape_roundRect_bottomRightRadius="10dp"
+                    app:shape_roundRect_topLeftRadius="10dp"
+                    app:shape_roundRect_topRightRadius="10dp">
+                    <ImageView
+                        android:id="@+id/fototopup"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_addphoto"
+                        tools:ignore="MissingConstraints" />
+                </com.github.florent37.shapeofview.shapes.RoundRectView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnbuktitf"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/bg_button_blue"
+                android:fontFamily="@font/mmedium"
+                android:text="Kirim Bukti Transfer"
+                android:visibility="gone"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btntopupbatal"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_button_white"
+                android:visibility="gone"
+                android:fontFamily="@font/mmedium"
+                android:text="Batalkan transaksi"
+                android:textColor="@color/grayPrmary"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnbuktitf"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

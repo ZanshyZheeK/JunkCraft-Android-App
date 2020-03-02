@@ -1,0 +1,4 @@
+#Thu Jan 23 00:38:07 ICT 2020
+base.0=D\:\\Tugas Cetar\\Kuli Payah\\~Semester 7\\Proyek Perangkat Lunak\\Android\\Beta\\JunkCraft-0116\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
+path.0=classes.dex
+renamed.0=classes.dex

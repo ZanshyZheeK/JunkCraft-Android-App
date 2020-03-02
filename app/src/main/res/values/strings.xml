@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">JunkCraft</string>
+    <string name="Login">LOGIN</string>
+    <string name="Register">REGISTER</string>
+    <string name="Email_label">Email</string>
+    <string name="Password_label">Password</string>
+    <string name="Nama_label">Nama Lengkap</string>
+    <string name="Alamat_label">Alamat</string>
+    <string name="username">Username</string>
+    <string name="title_activity_marketcheckout">marketcheckout</string>
+</resources>

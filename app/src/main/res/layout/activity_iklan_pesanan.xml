@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".iklan_pesanan">
+
+    <ImageView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bg_gradien_primary_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        tools:ignore="MissingConstraints">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutatas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/textya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/layoutatas"
+                tools:ignore="MissingConstraints">
+
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="20dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_back"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/mlight"
+                    android:layout_height="wrap_content"
+                    android:text="PESANAN"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mmedium"
+                    android:gravity="left"
+                    android:text="CRAFT"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_layout_white"
+                android:orientation="vertical"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textya"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:fontFamily="@font/mmedium"
+                    android:lineSpacingExtra="9dp"
+                    android:text="Detail Pesanan"
+                    android:textAlignment="center"
+                    android:textColor="@color/blackSecondary"
+                    android:textSize="16sp"
+                    tools:ignore="MissingConstraints" />
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:fontFamily="@font/mlight"
+                        android:layout_gravity="center"
+                        android:text="ID Pembelian"
+                        android:textColor="@color/grayPrmary"
+                        android:textSize="12sp"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/idpembelian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:fontFamily="@font/mmedium"
+                        android:text=""
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp"
+                        tools:ignore="MissingConstraints" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:fontFamily="@font/mlight"
+                        android:layout_gravity="center"
+                        android:text="Username Pembeli"
+                        android:textColor="@color/grayPrmary"
+                        android:textSize="12sp"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/userpembeli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:fontFamily="@font/mmedium"
+                        android:text=""
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp"
+                        tools:ignore="MissingConstraints" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tanggalpembelian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/mlight"
+                    android:lineSpacingExtra="9dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#ededed" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="16dp">
+
+                    <com.github.florent37.shapeofview.shapes.RoundRectView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:elevation="4dp"
+                        app:shape_roundRect_bottomLeftRadius="10dp"
+                        app:shape_roundRect_bottomRightRadius="10dp"
+                        app:shape_roundRect_topLeftRadius="10dp"
+                        app:shape_roundRect_topRightRadius="10dp">
+                        <ImageView
+                            android:id="@+id/fotobarang"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            tools:ignore="MissingConstraints" />
+                    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/judul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/mmedium"
+                            android:text=""
+                            android:textColor="@color/grayPrmary" />
+
+                        <TextView
+                            android:id="@+id/ket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/mlight"
+                            android:text=""
+                            android:textColor="@color/grayPrmary" />
+                        <TextView
+                            android:id="@+id/jmlhbeli"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/mlight"
+                            android:text=""
+                            android:textColor="@color/grayPrmary" />
+                        <TextView
+                            android:id="@+id/totalbayar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/mlight"
+                            android:text=""
+                            android:textColor="@color/grayPrmary" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/statusbayar"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:fontFamily="@font/mmedium"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:textColor="#d1206b"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:fontFamily="@font/mmedium"
+                    android:text="Pengiriman ke alamat"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:fontFamily="@font/mlight"
+                    android:text=""
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" />
+
+                <!--TextView
+                    android:layout_marginTop="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:fontFamily="@font/mlight"
+                    android:text="Tekan WHATSAPP untuk\nmeninjau proses pengiriman\n\nUang akan kembali pada saldo anda \napabila penjual tidak mengirim dalam 3 hari.\n\nTekan KONFIRMASI bila barang sudah sampai\ndan uang akan dikirim ke saldo penjual"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" /-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutalamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_layout_white"
+                android:orientation="vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:fontFamily="@font/mmedium"
+                    android:lineSpacingExtra="9dp"
+                    android:text="No Resi"
+                    android:textAlignment="center"
+                    android:textColor="@color/blackSecondary"
+                    android:textSize="16sp"
+                    tools:ignore="MissingConstraints" />
+                <EditText
+                    android:id="@+id/noresi"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_input_edit"
+                    android:fontFamily="@font/mmedium"
+                    android:paddingLeft="12dp"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textColor="@color/blackSecondary"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="12dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_konfirmasi"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_button_white"
+                android:visibility="gone"
+                android:fontFamily="@font/mmedium"
+                android:text="KONFIRMASI"
+                android:textColor="@color/grayPrmary"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutalamat"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

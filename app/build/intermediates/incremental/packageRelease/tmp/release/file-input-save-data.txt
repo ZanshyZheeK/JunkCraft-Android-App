@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Thu Jan 23 00:38:07 ICT 2020
+0.baseType=DIRECTORY
+0.base=D\:\\Tugas Cetar\\Kuli Payah\\~Semester 7\\Proyek Perangkat Lunak\\Android\\Beta\\JunkCraft-0116\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
+0.path=classes.dex
+0.set=DEX
+count=1
